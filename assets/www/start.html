@@ -1,8 +1,113 @@
 <html>
-<head></head>
-<body>
-<a href = "index.html">go to index</a>
+<head>
 
+    <style>
+	body
+	{
+		font-family: sans-serif;
+	}
+
+	h1
+	{
+		margin-right:110px;
+	}
+
+	.evo-image
+	{
+		position:fixed;
+		right:5px;
+		top:5px;
+		width:100px;
+		height:auto;
+		background:white;
+	}
+	.item
+	{
+		border-collapse:collapse;
+			border-style:outset;
+
+	}
+	.item_name
+    {
+        text-align:center;
+                    background-color:orangered;
+                    color:white;
+                    height:50px;
+                    width:400px
+    }
+            .order_date
+    {
+        text-align:left;
+                    background-color:gray;
+                    color:black;
+                    height:30px;
+    }
+            .picture
+    {
+                    text-align:center;
+                    outline-color:black;
+                    color:black;
+                    height:75;
+                    width:150px
+    }
+            .item_info_name
+            {
+                    text-align:center;
+                    vertical-align:top;
+                    outline-color:black;
+                    color:black;
+                    height:80px;
+                    width:250px
+    }
+            .item_button_smilebox
+            {
+                    background-color:red;
+                    color:white;
+                    text-align:center;
+                    outline-color:black;
+    }
+	</style>
+</head>
+<body>
+
+<table class="item" >
+    <tr>
+        <td class="item_name" colspan="2">
+            스마일박스 판매내역 리스트
+        </td>
+    </tr>
+    <tr>
+        <td class="order_date" colspan="2">
+            2016-12-10
+        </td>
+    </tr>
+    <tr>
+        <td class="picture" rowspan="2">
+            사진
+        </td>
+        <td class="item_info_name">
+            <!--<table>-->
+            <!--<tr>-->
+            <!--<td class="item_info_name">-->
+            <br />로베라 헬스 자전거<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1개/80,000원
+
+            <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>
+                <td class="item_info_price">
+                    1개/80,000원
+                </td>
+            </tr>-->
+            <!--</table>-->
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:right">
+            <input type="button" id="btn_ReceiveBySmilebox" value="스마일박스 열기" class="item_button_smilebox" onclick="location.href = 'index.html'"/>
+        </td>
+    </tr>
+
+</table>
 
 </body>
 </html>
